@@ -1,0 +1,19 @@
+# Число 1234 записали 50 подряд, а потом полученное 200-значное число возвели в квадрат. Вывести это число.#
+
+x = "1234"
+a = x * 50
+new_int = int(a)
+y = new_int**2
+print(y)
+
+#Посчитать 1! + 2! + 3! + 4! + ... + n! для заданного n. Решить только одним циклом#
+
+def function_1(n):
+    if n==0:
+        return 1
+    else:
+        result = n*function_1(n-1)
+    return result
+assert function_1(5)
+print(function_1(5))
+
